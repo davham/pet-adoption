@@ -21,6 +21,7 @@ async function petsArea() {
 	petsData.forEach((pet) => {
 		const clone = template.content.cloneNode(true)
 		clone.querySelector('h3').textContent = pet.name
+		clone.querySelector('h3').textContent = pet.name
 		wrapper.appendChild(clone)
 	})
 	document.querySelector('.list-of-pets').appendChild(wrapper)
